@@ -1,6 +1,3 @@
-
-# coding: utf-8
-
 #Here's a simple example of a list
 bicycles = ['trek','canonndale','redline','specialized' ]
 print(bicycles[0])
