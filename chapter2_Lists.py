@@ -3,7 +3,7 @@ bicycles = ['trek','canonndale','redline','specialized' ]
 print(bicycles[0])
 print(bicycles[0].title())
 
-#Index Positions Start at 0, Not 1
+#Index Numbers Start at 0, Not 1
 # At Index -1, python returns the last item, at index -2 second item from the end of list, so on.
 
 
