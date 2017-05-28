@@ -1,24 +1,13 @@
-
-# coding: utf-8
-
-# In[7]:
-
 # A simple dictionary
 alien_0 = {'color' : 'green', 'points' : 5}
 
 print(alien_0['color'])
 print(alien_0['points'])
 
-
-# In[10]:
-
 #Accessing values in a dictionary
 alien_0 = {'color' : 'green', 'points' : 5}
 new_points = alien_0['points']
 print("You just earned " + str(new_points) + " points!")
-
-
-# In[13]:
 
 #Adding New Key-Value Pairs
 alien_0 = {'color' : 'green', 'points' : 5}
@@ -27,18 +16,11 @@ alien_0['x_position'] = 0
 alien_0['y_position'] = 25
 print(alien_0)
 
-
-
-# In[15]:
-
 #Starting with an Empty Dictionary
 alien_0 = {}
 alien_0['color'] ='green'
 alien_0['points'] = 5
 print(alien_0)
-
-
-# In[21]:
 
 #Modifying values in a dictionary
 alien_0 = {'color' : 'green'}
@@ -46,9 +28,6 @@ print("The alien is " + alien_0['color'] + ".")
 
 alien_0 = {'color' : 'yellow'}
 print("The alien is now " + alien_0['color'] + ".")
-
-
-# In[35]:
 
 alien_0 ={'x_position' : 0, 'y_position': 25, 'speed': 'medium'}
 print("Original x-position: " + str(alien_0['x_position']))
@@ -65,20 +44,12 @@ else:
 alien_0['x_position'] = alien_0['x_position'] + x_increment
 print("New x-position: " + str(alien_0['x_position']))
 
-
-
-
-# In[36]:
-
 #Removing Key-Value Pairs
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0)
 
 del alien_0['points']
 print(alien_0)
-
-
-# In[3]:
 
 #A Dictionary of Similar Objects
 favorite_languages ={
@@ -88,9 +59,6 @@ favorite_languages ={
     'phil' : 'python'
 }
 print("Sarah's favorite language is " + favorite_languages['sarah'].title() + '.')
-
-
-# In[5]:
 
 #Looping Through All Key-Value Pairs
 user_0 ={
@@ -103,9 +71,6 @@ for key, value in user_0.items():
     print("\nKey: " +key)
     print("Value: " +value)
 
-
-# In[10]:
-
 favorite_languages ={
     'jen' : 'python',
     'sarah' : 'c',
@@ -114,9 +79,6 @@ favorite_languages ={
 }
 for name, language in favorite_languages.items():
     print(name.title() + "'s favorite language is " + language.title() + ".")
-
-
-# In[15]:
 
 #Looping Through All the Keys in a Dictionary
 favorite_languages ={
@@ -127,9 +89,6 @@ favorite_languages ={
 }
 for name in favorite_languages:
     print(name.title())
-
-
-# In[21]:
 
 favorite_languages ={
     'jen' : 'python',
@@ -145,9 +104,6 @@ for name in favorite_languages:
 if 'erin' not in favorite_languages: 
     print("Erin, please take our poll!")
 
-
-# In[22]:
-
 #Looping Through a Dictionary’s Keys in Order
 favorite_languages ={
     'jen' : 'python',
@@ -158,12 +114,6 @@ favorite_languages ={
 
 for name in sorted(favorite_languages):
     print(name.title()+ ", thank you for taking the poll. ")
-    
-
-
-
-
-# In[23]:
 
 #Looping Through All Values in a Dictionary
 favorite_languages ={
@@ -177,18 +127,11 @@ print("The following languages have been mentioned:")
 for language in favorite_languages.values():
     print(language.title())
 
-
-# In[24]:
-
 #set() for nonrepetitive
 print("The following languages have been mentioned:")
 for language in set(favorite_languages.values()): 
     
     print(language.title())
-
-
-
-# In[25]:
 
 #Nesting
 #A List of Dictionaries
@@ -198,9 +141,6 @@ alien_2 = {'color': 'red', 'points': 15}
 aliens = [alien_0, alien_1, alien_2] 
 for alien in aliens:
        print(alien)
-
-
-# In[30]:
 
 #range() 
 # Make an empty list for storing aliens.
@@ -214,9 +154,6 @@ for alien_number in range(30):
 print("...")
 # Show how many aliens have been created.
 print("Total number of aliens: " + str(len(aliens)))
-
-
-# In[31]:
 
 # Make an empty list for storing aliens.
 aliens = []
@@ -234,9 +171,6 @@ for alien in aliens[0:5]:
     print(alien)
 print("...")
 
-
-# In[32]:
-
 #Change yellows to reds
 for alien in aliens[0:3]:
     if alien['color'] == 'green':
@@ -247,9 +181,6 @@ for alien in aliens[0:3]:
         alien['color'] = 'red'
         alien['speed'] = 'fast'
         alien['points'] = 15
-
-
-# In[33]:
 
 #A List in a Dictionary
 # Store information about a pizza being ordered. 
@@ -263,9 +194,6 @@ print("You ordered a " + pizza['crust'] + "-crust pizza " +
 for topping in pizza['toppings']: 
     print("\t" + topping)
 
-
-# In[36]:
-
 favorite_languages ={
     'jen': ['python','ruby'],
     'sarah': ['c'],
@@ -276,9 +204,6 @@ for name, languages in favorite_languages.items():
     print("\n" +name.title() + "'s favorite languages are:")
     for language in languages:
         print("\t" + language.title())
-
-
-# In[38]:
 
 #A Dictionary in a Dictionary
 users = {
@@ -302,8 +227,6 @@ for username, user_info in users.items():
     print("\tFull name: " + full_name.title()) 
     print("\tLocation: " + location.title())
 
-
-# In[ ]:
 
 
 
