@@ -1,38 +1,20 @@
-
-# coding: utf-8
-
-# In[2]:
-
 # how the input() Function Works
 message = input("Tell me something, and I will repeat it back to you: ")
 print (message)
 
-
-# In[3]:
-
 #Writing Clear Prompts
 name = input("Please enter your name: ")
 print("Hello, " + name + "!")
-
-
-# In[5]:
-
 prompt = "If you tell us who you are, we can personalize the messages you see."
 prompt += "\nWhat is your first name? "
 
 name = input(prompt)
 print("\nHello, " + name + "!")
 
-
-# In[ ]:
-
 #Using int() to Accept numerical Input
 age = input("How old are you?")
 age = int(age)
 age >= 18
-
-
-# In[ ]:
 
 height = input("How tall are you, in inches? ")
 height = int(height)
@@ -41,9 +23,6 @@ if height >= 36:
     print("\nYou're tall enough to ride!")
 else:
     print("\nYou''ll be able to ride when you're a little order.")
-
-
-# In[ ]:
 
 #The Modulo Operator
 number = input("Enter a number, and I'll tell you if it's even or odd: ")
@@ -54,18 +33,12 @@ if number % 2 == 0:
 else:
     print("\nThe number " +str(number) + " is odd.")
 
-
-# In[ ]:
-
 #The While Loop in a Action
 current_number = 1
 
 while current_number <= 5:
     print(current_number)
     current_number +=1
-
-
-# In[22]:
 
 #Letting the User Choose When To Quit
 prompt = "\nTell me something, and I will repeat it back to you: "
@@ -77,9 +50,6 @@ while message != 'quit':
     
     if message != 'quit':
         print(message)
-
-
-# In[23]:
 
 #Using a Flag
 prompt = "\nTell me something, and I will repeat it back to you: "
@@ -94,9 +64,6 @@ while active:
     else:
         print(message)
 
-
-# In[25]:
-
 #Using break to Exit a Loop
 prompt = "\nPlease enter the name of a city you have visited:"
 prompt += "\n(Enter 'quit' when you are finished.)"
@@ -109,9 +76,6 @@ while True:
     else:
         print("I'd love to go to " + city.title() + "!")
 
-
-# In[26]:
-
 #Using continue in a Loop
 current_number = 0
 while current_number < 10:
@@ -120,18 +84,12 @@ while current_number < 10:
         continue
     print(current_number)
 
-
-# In[ ]:
-
 #Avoiding Infinite Loops
 x = 1
 while x <= 5:
     print(x)
     x +=1
 #Use CTRL-C to stop infinite loops
-
-
-# In[3]:
 
 #Using a while Loop with Lists and Dictionaries
 #Moving Items from One List to Another
@@ -151,12 +109,7 @@ while unconfirmed_users:
 print("\nThe following users have been confirmed:")
 for confirmed_user in confirmed_users:
     print(confirmed_user.title())
-    
-
-
-
-# In[4]:
-
+   
 #Removing All Instances of Specific Values from a List
 pets = ['dog','cat','dog','goldfish','cat','rabbit','cat']
 print(pets)
@@ -165,9 +118,6 @@ while 'cat' in pets:
     pets.remove('cat')
     
 print(pets)
-
-
-# In[7]:
 
 #Filling a Dictionary with User Input
 responses = {}
@@ -193,48 +143,3 @@ while polling_active:
 print("\n--- Poll Results ---")
 for name,response in responses.items():
     print(name + " would like to climb " + response + ".")
-
-
-# In[ ]:
-
-
-
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
